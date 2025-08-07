@@ -3,174 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects - Digital Masterpieces</title>
+    <title>Work - Nikolaos Neofytou</title>
     <link rel="stylesheet" href="../style.css" />
-    <!-- Classical fonts -->
+    <!-- Modern fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family:Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-      .gallery-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-top: 2rem;
-      }
-      
-      .gallery-item {
-        background: #f9f9f9;
-        border-radius: 8px;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      }
-      
-      .gallery-item img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 4px;
-        margin-bottom: 1rem;
-      }
-      
-      .gallery-item h3 {
-        margin-bottom: 0.5rem;
-        color: #333;
-      }
-      
-      .gallery-item p {
-        color: #666;
-        margin-bottom: 1rem;
-      }
-      
-      .gallery-item video {
-        width: 100%;
-        height: 200px;
-        border-radius: 4px;
-        margin: 1rem 0;
-      }
-      
-      .gallery-selector {
-        margin-bottom: 2rem;
-        text-align: center;
-      }
-      
-      .gallery-selector select {
-        padding: 0.5rem;
-        font-size: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        background: white;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">NIKOLAOS</div>
-        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
-        <ul class="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="content-overlay">
+      <header>
+        <nav class="navbar">
+          <a href="home.html" class="logo">Nikolaos Neofytou</a>
+          <button class="menu-toggle" id="mobile-menu">☰</button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <section id="projects" class="tech-pattern">
-      <h2>Digital Atelier</h2>
-      <p style="text-align: center; font-style: italic; color: var(--shadow-brown); margin-bottom: 3rem; font-size: 1.2rem;">
-        "Each project is a study in light and shadow, revealing the beauty in complexity"
-      </p>
-      
-      <div class="gallery-selector">
-        <label for="gallery-select">Choose a gallery:</label>
-        <select id="gallery-select">
-          <option value="web-projects">Web Projects</option>
-          <option value="mobile-apps">Mobile Apps</option>
-          <option value="data-science">Data Science</option>
-          <option value="other">Other Projects</option>
-        </select>
-      </div>
-      
-      <div id="gallery-container" class="gallery-container">
-        <!-- Gallery items will be loaded here based on selection -->
-      </div>
-    </section>
+    <main>
+      <section id="projects" class="full-width-section">
+        <h2>Selected Work</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem; color: var(--cream); font-size: 1rem;">
+          A collection of projects that showcase my passion for creating meaningful digital experiences.
+        </p>
+        
+        <div class="projects-grid">
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="E-commerce Platform" />
+            </div>
+            <div class="project-info">
+              <h3>E-commerce Platform</h3>
+              <p>A full-stack e-commerce solution with modern UI/UX, payment integration, and advanced analytics dashboard.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Mobile Application" />
+            </div>
+            <div class="project-info">
+              <h3>React Native App</h3>
+              <p>Cross-platform mobile application with real-time features, offline capabilities, and seamless user experience.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Data Visualization" />
+            </div>
+            <div class="project-info">
+              <h3>Data Analytics Dashboard</h3>
+              <p>Interactive data visualization platform with real-time updates, custom charts, and comprehensive reporting tools.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop" alt="Machine Learning" />
+            </div>
+            <div class="project-info">
+              <h3>ML Prediction Model</h3>
+              <p>Machine learning application for predictive analytics with data preprocessing, model training, and deployment pipeline.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600&h=400&fit=crop" alt="Web Application" />
+            </div>
+            <div class="project-info">
+              <h3>SaaS Web Platform</h3>
+              <p>Scalable software-as-a-service platform with user management, subscription billing, and comprehensive API.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Portfolio Website" />
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <p>This very website - a responsive portfolio showcasing clean design principles and modern web technologies.</p>
+              <a href="https://github.com/NikolasNeofytou/personal_website" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-      <p>&copy; <span id="year"></span> Nikolaos Neofytou | Crafted with Classical Precision</p>
+      <p>&copy; <span id="year"></span> Nikolaos Neofytou. All rights reserved.</p>
     </footer>
+    </div>
 
     <script src="../script.js"></script>
     <script>
-      // Gallery data structure
-      const galleries = {
-        'web-projects': [
-          {
-            name: 'Portfolio Website',
-            image: '../gallery/web-projects/portfolio.jpg',
-            description: 'A responsive personal portfolio website built with HTML, CSS, and JavaScript.',
-            video: 'https://www.w3schools.com/html/mov_bbb.mp4',
-            link: 'https://github.com/yourusername/portfolio'
-          },
-          {
-            name: 'E-commerce Site',
-            image: '../gallery/web-projects/ecommerce.jpg',
-            description: 'A full-stack e-commerce application with payment integration.',
-            link: 'https://github.com/yourusername/ecommerce'
-          }
-        ],
-        'mobile-apps': [
-          {
-            name: 'Task Manager App',
-            image: '../gallery/mobile-apps/taskmanager.jpg',
-            description: 'A React Native mobile app for task management and productivity.',
-            link: 'https://github.com/yourusername/taskmanager'
-          }
-        ],
-        'data-science': [
-          {
-            name: 'Weather Prediction Model',
-            image: '../gallery/data-science/weather.jpg',
-            description: 'Machine learning model for weather prediction using Python and TensorFlow.',
-            link: 'https://github.com/yourusername/weather-prediction'
-          }
-        ],
-        'other': [
-          {
-            name: 'Arduino IoT Project',
-            image: '../gallery/other/arduino.jpg',
-            description: 'IoT project using Arduino for home automation.',
-            link: 'https://github.com/yourusername/arduino-iot'
-          }
-        ]
-      };
-
-      function loadGallery(galleryType) {
-        const container = document.getElementById('gallery-container');
-        const projects = galleries[galleryType] || [];
-        
-        container.innerHTML = projects.map(project => `
-          <div class="gallery-item">
-            <img src="${project.image}" alt="${project.name}" onerror="this.src='https://via.placeholder.com/300x200?text=${encodeURIComponent(project.name)}'">
-            <h3>${project.name}</h3>
-            <p>${project.description}</p>
-            ${project.video ? `<video controls><source src="${project.video}" type="video/mp4">Your browser does not support the video tag.</video>` : ''}
-            <a href="${project.link}" target="_blank" class="btn">View on GitHub</a>
-          </div>
-        `).join('');
-      }
-
-      // Load default gallery
-      document.addEventListener('DOMContentLoaded', () => {
-        loadGallery('web-projects');
+      // Mobile menu toggle
+      document.getElementById('mobile-menu').addEventListener('click', function() {
+        document.getElementById('nav-links').classList.toggle('active');
       });
-
-      // Handle gallery selection change
-      document.getElementById('gallery-select').addEventListener('change', (e) => {
-        loadGallery(e.target.value);
-      });
+      
+      // Set current year
+      document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
