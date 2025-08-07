@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Nikolaos Neofytou</title>
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Modern fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="caravaggio-background">
+      <img src="../gallery/caravaggio/crowning.jpg" alt="Caravaggio Background" />
+    </div>
+    
+    <div class="content-overlay">
+      <header>
+        <nav class="navbar">
+          <a href="home.html" class="logo">Nikolaos Neofytou</a>
+          <button class="menu-toggle" id="mobile-menu">☰</button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <main>
+      <section id="contact-info">
+        <h2>Contact Info</h2>
+        <div class="contact-method">
+          <div class="contact-method-icon">📧</div>
+          <div class="contact-method-details">
+            <h4>Email</h4>
+            <p><a href="mailto:hello@nikolaosneofytou.com">hello@nikolaosneofytou.com</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-method-icon">💼</div>
+          <div class="contact-method-details">
+            <h4>LinkedIn</h4>
+            <p><a href="https://linkedin.com/in/nikolaosneofytou" target="_blank">Connect with me</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-method-icon">💻</div>
+          <div class="contact-method-details">
+            <h4>GitHub</h4>
+            <p><a href="https://github.com/nikolasneofytou" target="_blank">View my code</a></p>
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <a href="mailto:hello@nikolaosneofytou.com" class="social-link">Email</a>
+          <a href="https://linkedin.com/in/nikolaosneofytou" target="_blank" class="social-link">LinkedIn</a>
+          <a href="https://github.com/nikolasneofytou" target="_blank" class="social-link">GitHub</a>
+        </div>
+      </section>
+
+      <section id="contact-form">
+        <h2>Send Message</h2>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/yourformid" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="availability">
+        <h2>Availability</h2>
+        <p style="text-align: center; color: var(--cream); font-size: 0.9rem; margin-bottom: 1rem;">
+          Currently available for new projects and collaborations.
+        </p>
+        <p style="text-align: center; color: var(--accent-gold); font-size: 0.8rem; font-style: italic;">
+          Response time: Usually within 24 hours
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Nikolaos Neofytou. All rights reserved.</p>
+    </footer>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

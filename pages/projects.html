@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work - Nikolaos Neofytou</title>
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Modern fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content-overlay">
+      <header>
+        <nav class="navbar">
+          <a href="home.html" class="logo">Nikolaos Neofytou</a>
+          <button class="menu-toggle" id="mobile-menu">☰</button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <main>
+      <section id="projects" class="full-width-section">
+        <h2>Selected Work</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem; color: var(--cream); font-size: 1rem;">
+          A collection of projects that showcase my passion for creating meaningful digital experiences.
+        </p>
+        
+        <div class="projects-grid">
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="E-commerce Platform" />
+            </div>
+            <div class="project-info">
+              <h3>E-commerce Platform</h3>
+              <p>A full-stack e-commerce solution with modern UI/UX, payment integration, and advanced analytics dashboard.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Mobile Application" />
+            </div>
+            <div class="project-info">
+              <h3>React Native App</h3>
+              <p>Cross-platform mobile application with real-time features, offline capabilities, and seamless user experience.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Data Visualization" />
+            </div>
+            <div class="project-info">
+              <h3>Data Analytics Dashboard</h3>
+              <p>Interactive data visualization platform with real-time updates, custom charts, and comprehensive reporting tools.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop" alt="Machine Learning" />
+            </div>
+            <div class="project-info">
+              <h3>ML Prediction Model</h3>
+              <p>Machine learning application for predictive analytics with data preprocessing, model training, and deployment pipeline.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600&h=400&fit=crop" alt="Web Application" />
+            </div>
+            <div class="project-info">
+              <h3>SaaS Web Platform</h3>
+              <p>Scalable software-as-a-service platform with user management, subscription billing, and comprehensive API.</p>
+              <a href="https://github.com/NikolasNeofytou" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Portfolio Website" />
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <p>This very website - a responsive portfolio showcasing clean design principles and modern web technologies.</p>
+              <a href="https://github.com/NikolasNeofytou/personal_website" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Nikolaos Neofytou. All rights reserved.</p>
+    </footer>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+      // Mobile menu toggle
+      document.getElementById('mobile-menu').addEventListener('click', function() {
+        document.getElementById('nav-links').classList.toggle('active');
+      });
+      
+      // Set current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
