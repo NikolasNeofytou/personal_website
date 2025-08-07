@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Connect Across Time</title>
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Classical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+      .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin-top: 2rem;
+      }
+      
+      .contact-form {
+        background: #f9f9f9;
+        padding: 2rem;
+        border-radius: 8px;
+      }
+      
+      .contact-form label {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+      }
+      
+      .contact-form textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+      
+      .contact-form button {
+        background: #333;
+        color: white;
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+      }
+      
+      .contact-form button:hover {
+        background: #555;
+      }
+      
+      .contact-info {
+        padding: 1rem;
+      }
+      
+      .contact-method {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        background: #f9f9f9;
+        border-radius: 8px;
+      }
+      
+      .contact-method-icon {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        width: 2rem;
+        text-align: center;
+      }
+      
+      .contact-method-details h4 {
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+      
+      .contact-method-details p {
+        color: #666;
+        margin: 0;
+      }
+      
+      .contact-method-details a {
+        color: #333;
+        text-decoration: none;
+      }
+      
+      .contact-method-details a:hover {
+        text-decoration: underline;
+      }
+      
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      
+      .social-link {
+        display: inline-block;
+        padding: 0.8rem;
+        background: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        line-height: 1.2;
+      }
+      
+      .social-link:hover {
+        background: #555;
+      }
+      
+      @media (max-width: 768px) {
+        .contact-container {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">NIKOLAOS</div>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="contact">
+      <h2>Epistolary Exchange</h2>
+      <p style="text-align: center; font-style: italic; color: var(--shadow-brown); margin-bottom: 3rem; font-size: 1.2rem;">
+        "In the tradition of great minds, let us correspond and illuminate new possibilities"
+      </p>
+      
+      <div class="contact-container">
+        <div class="contact-form">
+          <h3>Send a Digital Missive</h3>
+          <form action="https://formspree.io/f/yourformid" method="POST">
+            <label>
+              Your Noble Name:
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Your Electronic Address:
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Subject of Discourse:
+              <input type="text" name="subject" required />
+            </label>
+            <label>
+              Your Message:
+              <textarea name="message" required placeholder="Share your vision, your challenge, or simply extend a greeting across the digital realm..."></textarea>
+            </label>
+            <button type="submit">Dispatch Message</button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Channels of Communication</h3>
+          
+          <div class="contact-method">
+            <div class="contact-method-icon">📧</div>
+            <div class="contact-method-details">
+              <h4>Electronic Post</h4>
+              <p><a href="mailto:nikolaos@example.com">nikolaos@example.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-method-icon">⚡</div>
+            <div class="contact-method-details">
+              <h4>Digital Signal</h4>
+              <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-method-icon">🏛️</div>
+            <div class="contact-method-details">
+              <h4>Physical Realm</h4>
+              <p>Somewhere between Athens and Silicon Valley</p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-method-icon">⏳</div>
+            <div class="contact-method-details">
+              <h4>Response Velocity</h4>
+              <p>Swift as Mercury's wings</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com/NikolasNeofytou" target="_blank" class="social-link" title="GitHub Repository">
+              🐙
+            </a>
+            <a href="https://linkedin.com/in/nikolasneofytou" target="_blank" class="social-link" title="Professional Network">
+              💼
+            </a>
+            <a href="https://twitter.com/nikolasneo" target="_blank" class="social-link" title="Digital Agora">
+              🐦
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Nikolaos Neofytou | Crafted with Classical Precision</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

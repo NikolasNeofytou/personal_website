@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - The Artist Behind the Code</title>
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Classical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+      .about-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        align-items: start;
+      }
+      
+      .profile-photo {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      
+      .skills-section {
+        margin-top: 2rem;
+      }
+      
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      
+      .skill-category {
+        background: #f9f9f9;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+      
+      .skill-category h4 {
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+      
+      .skill-category ul {
+        list-style: none;
+      }
+      
+      .skill-category li {
+        padding: 0.2rem 0;
+        color: #666;
+      }
+      
+      @media (max-width: 768px) {
+        .about-container {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">NIKOLAOS</div>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>The Renaissance Mind</h2>
+      
+      <div class="about-container">
+        <div>
+          <img src="../gallery/profile/profile-photo.jpg" alt="Nikolaos Neofytou" class="profile-photo" 
+               onerror="this.src='https://via.placeholder.com/300x300/d4a574/3c2415?text=NIKOLAOS'">
+        </div>
+        
+        <div>
+          <p>Greetings! I am Nikolaos, a digital artisan where the wisdom of ancient Greece meets the innovation of modern technology. Like the masters of the Renaissance, I believe in the harmony between art and science.</p>
+          
+          <p>My passion lies at the intersection of classical elegance and cutting-edge electronics. From the chiaroscuro techniques of Caravaggio to the precise circuitry of modern devices, I find beauty in both the dramatic interplay of light and shadow, and the elegant flow of electrons through silicon pathways.</p>
+          
+          <p>When I'm not crafting code or designing circuits, you'll find me studying the great masters, exploring archaeological sites, or contemplating how ancient principles can illuminate modern challenges. I believe that true innovation comes from understanding the timeless foundations upon which we build.</p>
+        </div>
+      </div>
+      
+      <div class="skills-section">
+        <h3>Domains of Mastery</h3>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>⚡ Electronics & Hardware</h4>
+            <ul>
+              <li>Circuit Design & Analysis</li>
+              <li>Arduino & Microcontrollers</li>
+              <li>PCB Design & Prototyping</li>
+              <li>Sensor Integration</li>
+              <li>IoT Systems</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h4>💻 Software Craftsmanship</h4>
+            <ul>
+              <li>Python & Data Science</li>
+              <li>JavaScript & Web Dev</li>
+              <li>C/C++ for Embedded</li>
+              <li>React & Modern Frameworks</li>
+              <li>Database Architecture</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h4>🏛️ Classical Foundations</h4>
+            <ul>
+              <li>Mathematical Principles</li>
+              <li>Historical Research</li>
+              <li>Design Philosophy</li>
+              <li>Artistic Composition</li>
+              <li>Renaissance Methods</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Nikolaos Neofytou | Crafted with Classical Precision</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
